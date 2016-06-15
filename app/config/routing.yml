@@ -1,0 +1,4 @@
+crash_test_main:
+    resource: "@CrashTestMainBundle/Resources/config/routing.yml"
+    prefix:   /
+

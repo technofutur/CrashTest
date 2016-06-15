@@ -1,0 +1,4 @@
+services:
+#    crash_test_main.example:
+#        class: CrashTest\MainBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

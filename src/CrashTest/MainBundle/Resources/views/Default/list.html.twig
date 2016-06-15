@@ -1,0 +1,26 @@
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Author</th>
+            <th>Creation Date</th>
+            <th>Update Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if articles|length > 0 %}
+            {% for article in articles %}
+                <tr>
+                    <td>{{ article.articleID }}</td>
+                    <td>{{ article.articleTitle }}</td>
+                    <td>{{ article.articleContent }}</td>
+                    <td>{{ article.articleAuthor }}</td>
+                    <td>{{ article.articleCreationDate|date('d-m-Y') }}</td>
+                    <td>{{ article.articleLastUpdate|date('d-m-Y') }}</td>
+                </tr>
+            {% endfor %}
+        {% endif %}
+    </tbody>
+</table>

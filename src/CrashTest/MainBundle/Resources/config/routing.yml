@@ -1,0 +1,8 @@
+crash_test_main_homepage:
+    path:     /
+    defaults: { _controller: CrashTestMainBundle:Default:index }
+
+crash_test_main_article_show:
+    path: /articles
+    defaults: { _controller: CrashTestMainBundle:Default:listArticle }
+    methods: [ GET ]
